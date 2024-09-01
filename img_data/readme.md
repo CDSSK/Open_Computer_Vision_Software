@@ -1,1 +1,1 @@
-# These image datas are obtained from Kaggle
+# These image data were obtained from Kaggle
