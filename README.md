@@ -22,34 +22,59 @@
 Invert Color 기법을 적용했을 때의 결과는 다음과 같이 나타납니다.
 
 ### Preprocessing
-이미지 전처리는 원본 이미지를 분석하고 처리하기 위해 최적화하는 과정입니다. 전처리 단계를 통해 이미지 데이터를 더 효과적으로 분석하고, 머신러닝 또는 딥러닝 모델의 성능을 극대화할 수 있습니다.
+이미지 전처리는 원본 이미지를 분석하고 처리하기 위해 최적화하는 과정입니다. 전처리 단계를 통해 이미지 데이터를 더 효과적으로 분석하고, 머신러닝 또는 딥러닝 모델의 성능을 극대화할 수 있습니다.Invert Color는 각 픽셀의 색상을 그 반대 색상으로 변환하는 전처리 방법입니다.
 
 ![Invert Color](https://github.com/CDSSK/Open_Computer_Vision_Software/blob/master/Program%20screen/invert%20color.png)
 
 
 ### Filtering
-Median Blur
+필터링은 이미지를 변형하거나 개선하기 위해 특정한 수학적 연산을 적용하는 과정입니다. 필터링의 주요 목적은 노이즈 제거, 경계 강조, 또는 이미지의 특정 특징을 추출하는 것입니다
+Median Blur는 이미지에서 노이즈를 제거하기 위한 비선형 필터링 기법입니다. 이 방법은 각 픽셀을 주변 픽셀의 중간값(median)으로 대체하여 이미지를 부드럽게 만듭니다.
+
+![Median Blur](https://github.com/CDSSK/Open_Computer_Vision_Software/blob/master/Program%20screen/Median%20Blur.png)
+
 
 ### Correction
-Edge Detection
+Correction은 이미지의 품질을 향상시키기 위해 다양한 결함이나 왜곡을 수정하는 과정을 의미합니다. 
+Power Law Transformation은 이미지의 밝기를 조정하기 위해 사용하는 비선형 변환 기법입니다. 이 기법은 주로 이미지의 대비를 조정하거나 특정 효과를 주기 위해 사용됩니다.
+
+![Power Law Transformation](https://github.com/CDSSK/Open_Computer_Vision_Software/blob/master/Program%20screen/Power%20Law%20Transformation.png)
+
 
 ### Transformation
-Pencil Sketch
+이미지 처리 기법 중 Transformation은 이미지의 픽셀 값을 변환하거나 조작하여 새로운 이미지를 생성하는 과정을 의미합니다. 이 기법은 이미지의 특성을 변경하거나 향상시키기 위해 사용됩니다.
+Pencil Sketch는 원본 이미지를 연필로 그린 듯한 효과를 주는 변환 기법입니다. 
+
+![Pencil Sketch](https://github.com/CDSSK/Open_Computer_Vision_Software/blob/master/Program%20screen/Pencil%20Sketch.png)
+
 
 ### Feature Extraction
-PCA
+Feature Extraction은 이미지 처리에서 중요한 단계로, 이미지 내에서 의미 있는 정보나 패턴을 식별하고 이를 수치적 형태로 표현하는 과정입니다. 
+PCA는 고차원 데이터를 저차원으로 축소하는 기법으로, 이미지 처리에서도 널리 사용됩니다
+
+![PCA](https://github.com/CDSSK/Open_Computer_Vision_Software/blob/master/Program%20screen/PCA(20).png)
+
 
 ### Segmentation
-FCN
+(Segmentation)은 이미지를 여러 개의 의미 있는 영역으로 나누는 과정입니다. 이 기법은 이미지 내에서 특정 객체나 영역을 식별하고 분석하기 위해 사용됩니다. 
+FCN(fully convolutional network)은 주로 이미지 분할(Segmentation) 작업에 사용되는 딥러닝 모델입니다.
+
+![FCN](https://github.com/CDSSK/Open_Computer_Vision_Software/blob/master/Program%20screen/FCN.png)
+
 
 ### Clustering
-K-means
+이미지 데이터를 활용한 클러스터링은 이미지의 특징을 기반으로 유사한 이미지를 그룹화하는 기법입니다. 이 과정을 통해 데이터의 구조를 이해하고, 비슷한 특성을 가진 이미지를 식별할 수 있습니다. 
+K-means 클러스터링은 주어진 이미지의 색상이나 특징을 기반으로 K개의 클러스터로 나누는 데 사용됩니다.
+
+![K-means](https://github.com/CDSSK/Open_Computer_Vision_Software/blob/master/Program%20screen/K-means.png)
+
 
 ### Transfer Learning
-EfficientNetB0
+전이 학습(Transfer Learning)은 이미 학습된 모델을 새로운 작업에 적용하는 기법으로, 이미지 데이터를 처리하는 데 매우 유용합니다. 
+EfficientNetB0는 Google에서 개발한 EfficientNet 모델 시리즈의 첫 번째 모델로, 이미지 분류 작업에 최적화된 신경망 아키텍처입니다. 
 
+![EfficientNetB0](https://github.com/CDSSK/Open_Computer_Vision_Software/blob/master/Program%20screen/EfficientNetB0.png)
 
-### B
 
 ## 파라미터 설정
 Invert Color 같은 메소드의 경우에는 불러온 이미지를 정해진 수식을 적용하여 처리된 이미지를 보여줍니다. 그러나 Edge Detection과 같이 사용자로 부터 파라미터를 직접 입력 받아 세밀하게 기법을 컨트롤하여 새로운 이미지를 얻을 수 있습니다.    
