@@ -21,7 +21,35 @@
 
 Invert Color 기법을 적용했을 때의 결과는 다음과 같이 나타납니다.
 
+### Preprocessing
+이미지 전처리는 원본 이미지를 분석하고 처리하기 위해 최적화하는 과정입니다. 전처리 단계를 통해 이미지 데이터를 더 효과적으로 분석하고, 머신러닝 또는 딥러닝 모델의 성능을 극대화할 수 있습니다.
 
+![Invert Color](https://github.com/CDSSK/Open_Computer_Vision_Software/blob/master/Program%20screen/invert%20color.png)
+
+
+### Filtering
+Median Blur
+
+### Correction
+Edge Detection
+
+### Transformation
+Pencil Sketch
+
+### Feature Extraction
+PCA
+
+### Segmentation
+FCN
+
+### Clustering
+K-means
+
+### Transfer Learning
+EfficientNetB0
+
+
+### B
 
 ## 파라미터 설정
 Invert Color 같은 메소드의 경우에는 불러온 이미지를 정해진 수식을 적용하여 처리된 이미지를 보여줍니다. 그러나 Edge Detection과 같이 사용자로 부터 파라미터를 직접 입력 받아 세밀하게 기법을 컨트롤하여 새로운 이미지를 얻을 수 있습니다.    
